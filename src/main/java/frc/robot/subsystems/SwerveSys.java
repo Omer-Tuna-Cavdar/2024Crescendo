@@ -25,7 +25,7 @@ public class SwerveSys extends SubsystemBase {
             CANDevices.frontLeftSteerMtrId,
             CANDevices.frontLeftCanCoderId,
             CANDevices.frontLeftcanCodercanBus,
-            true,
+            false,
             DriveConstants.frontLeftModOffset
         );
 
@@ -35,7 +35,7 @@ public class SwerveSys extends SubsystemBase {
             CANDevices.frontRightSteerMtrId,
             CANDevices.frontRightCanCoderId,
             CANDevices.frontRightcanCodercanBus,
-            true,
+            false,
             DriveConstants.frontRightModOffset
         );
 
@@ -55,7 +55,7 @@ public class SwerveSys extends SubsystemBase {
             CANDevices.backLeftSteerMtrId,
             CANDevices.backLeftCanCoderId,
             CANDevices.backLeftcanCodercanBus,
-            false,
+            true,
             DriveConstants.backLeftModOffset
         );
 

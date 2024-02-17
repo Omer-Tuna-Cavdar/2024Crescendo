@@ -97,7 +97,7 @@ public class Constants {
         public static final double steerMtrMaxSpeedRadPerSec = 2.0;
         public static final double steerMtrMaxAccelRadPerSecSq = 1.0;
 
-        public static final double maxDriveSpeedMetersPerSec = 5.0;
+        public static final double maxDriveSpeedMetersPerSec = 4.0;
 
         /**
          * The rate the robot will spin with full Rot command.
@@ -114,9 +114,9 @@ public class Constants {
         // the drive base drives 180 off from the commanded direction, flip these readings 180 degrees and change
         // the comment above for future reference.
         public static final Rotation2d frontLeftModOffset = Rotation2d.fromDegrees(((0.009)*360)); 
-        public static final Rotation2d frontRightModOffset = Rotation2d.fromDegrees(((0.96)*360) + 180.0);
-        public static final Rotation2d backRightModOffset = Rotation2d.fromDegrees( 44); 
-        public static final Rotation2d backLeftModOffset = Rotation2d.fromDegrees(358);
+        public static final Rotation2d frontRightModOffset = Rotation2d.fromDegrees(((0.96)*360) + 182.0);
+        public static final Rotation2d backRightModOffset = Rotation2d.fromDegrees( 47); 
+        public static final Rotation2d backLeftModOffset = Rotation2d.fromDegrees(0);
 
         // FIXME: You may want to change this value.
         public static final int driveCurrentLimitAmps = 40;

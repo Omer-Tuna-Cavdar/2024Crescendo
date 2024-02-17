@@ -26,14 +26,14 @@ public class Constants {
         public static final int frontRightDriveMtrId = 7;
         public static final String frontRightcanCodercanBus = "Civ Civ";
 
-        public static final int backRightCanCoderId = 12;
-        public static final int backRightSteerMtrId = 4;
-        public static final int backRightDriveMtrId = 3;
+        public static final int backRightCanCoderId = 11;
+        public static final int backRightSteerMtrId = 6;
+        public static final int backRightDriveMtrId = 5;
         public static final String backRightcanCodercanBus = "Civ Civ";
 
-        public static final int backLeftCanCoderId = 11;
-        public static final int backLeftSteerMtrId = 6;
-        public static final int backLeftDriveMtrId = 5;
+        public static final int backLeftCanCoderId = 12;
+        public static final int backLeftSteerMtrId = 4;
+        public static final int backLeftDriveMtrId = 3;
         public static final String backLeftcanCodercanBus = "Civ Civ";
 
         
@@ -113,10 +113,10 @@ public class Constants {
         // FIXME: Don't quote me on that they should be pointing to the left. (I'm almost positive though.) If 
         // the drive base drives 180 off from the commanded direction, flip these readings 180 degrees and change
         // the comment above for future reference.
-        public static final Rotation2d frontLeftModOffset = Rotation2d.fromDegrees((0.540283*360)); 
-        public static final Rotation2d frontRightModOffset = Rotation2d.fromDegrees((0.391602*360) + 180.0);
-        public static final Rotation2d backRightModOffset = Rotation2d.fromDegrees((0.390869*360) + 180.0); 
-        public static final Rotation2d backLeftModOffset = Rotation2d.fromDegrees((0.834473*360));
+        public static final Rotation2d frontLeftModOffset = Rotation2d.fromDegrees(((0.009)*360)); 
+        public static final Rotation2d frontRightModOffset = Rotation2d.fromDegrees(((0.96)*360) + 180.0);
+        public static final Rotation2d backRightModOffset = Rotation2d.fromDegrees( 44); 
+        public static final Rotation2d backLeftModOffset = Rotation2d.fromDegrees(358);
 
         // FIXME: You may want to change this value.
         public static final int driveCurrentLimitAmps = 40;

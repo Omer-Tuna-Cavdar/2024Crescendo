@@ -47,7 +47,7 @@ public class SwerveModule extends SubsystemBase {
      * @param measuredOffsetRadians Offset of CANCoder reading from forward.
      * @param canCodercanBus
      */
-    public SwerveModule(int driveMtrId, int steerMtrId, int canCoderId, String canCodercanBus, Rotation2d offset) {
+    public SwerveModule(int driveMtrId, int steerMtrId, int canCoderId, String canCodercanBus, Boolean DriveMtrinverted, Rotation2d offset) {
         
         driveMtr = new CANSparkMax(driveMtrId, MotorType.kBrushless);
         steerMtr = new CANSparkMax(steerMtrId, MotorType.kBrushless);
@@ -79,6 +79,7 @@ public class SwerveModule extends SubsystemBase {
 
         //set the output of the steeration encoder to be in radians
         steerEnc.setPositionConversionFactor(DriveConstants.steerRadiansPerEncRev);
+        driveMtr.setInverted(DriveMtrinverted);
 
         //configure the CANCoder to output in unsigned (wrap around from sensor value 1 to 0) and CCW positive
         // FIXME: Make sure the CANcoders actually read CCW positive (when viewing from above), otherwise you will

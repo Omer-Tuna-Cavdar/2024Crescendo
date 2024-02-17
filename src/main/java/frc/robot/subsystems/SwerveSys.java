@@ -25,6 +25,7 @@ public class SwerveSys extends SubsystemBase {
             CANDevices.frontLeftSteerMtrId,
             CANDevices.frontLeftCanCoderId,
             CANDevices.frontLeftcanCodercanBus,
+            true,
             DriveConstants.frontLeftModOffset
         );
 
@@ -34,6 +35,7 @@ public class SwerveSys extends SubsystemBase {
             CANDevices.frontRightSteerMtrId,
             CANDevices.frontRightCanCoderId,
             CANDevices.frontRightcanCodercanBus,
+            true,
             DriveConstants.frontRightModOffset
         );
 
@@ -43,6 +45,7 @@ public class SwerveSys extends SubsystemBase {
             CANDevices.backRightSteerMtrId,
             CANDevices.backRightCanCoderId,
             CANDevices.backRightcanCodercanBus,
+            false,
             DriveConstants.backRightModOffset
         );
 
@@ -52,6 +55,7 @@ public class SwerveSys extends SubsystemBase {
             CANDevices.backLeftSteerMtrId,
             CANDevices.backLeftCanCoderId,
             CANDevices.backLeftcanCodercanBus,
+            false,
             DriveConstants.backLeftModOffset
         );
 
@@ -78,7 +82,7 @@ public class SwerveSys extends SubsystemBase {
         this.speedFactor = speedFactor;
     }
 
-    private final Pigeon2 imu = new Pigeon2(CANDevices.imuId);
+    private final Pigeon2 imu = new Pigeon2(CANDevices.imuId, "Civ Civ");
 
     // Odometry for the robot, measured in meters for linear motion and radians for rotational motion
     // Takes in kinematics and robot angle for parameters

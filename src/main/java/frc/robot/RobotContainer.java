@@ -52,7 +52,7 @@ public class RobotContainer {
         // Otherwise I would delete those simple commands just to keep things clean.
 
         // Start is the "three lines" button. Back is the "windows" button.
-        driverController.options().onTrue(Commands.runOnce(() -> swerveSys.resetHeading()));
+        driverController.square().onTrue(Commands.runOnce(() -> swerveSys.resetHeading()));
 
         driverController.axisGreaterThan(PS5Controller.Axis.kL2.value, ControllerConstants.triggerPressedThreshhold)
             .whileTrue(Commands.runOnce(() -> swerveSys.lock()));
